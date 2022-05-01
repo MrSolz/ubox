@@ -41,7 +41,7 @@ buck-out/
 !debug.keystore
 .env
 .env.production
-.evn.staging
+.env.staging
 .env.development
 
 # fastlane
