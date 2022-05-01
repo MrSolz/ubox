@@ -39,6 +39,10 @@ yarn-error.log
 buck-out/
 \.buckd/
 !debug.keystore
+.env
+.env.production
+.evn.staging
+.env.development
 
 # fastlane
 #

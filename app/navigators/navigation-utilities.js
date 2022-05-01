@@ -1,13 +1,10 @@
 import { useState, useEffect, useRef } from "react"
 import { BackHandler } from "react-native"
 import {
-    PartialState,
-    NavigationState,
-    NavigationAction,
     createNavigationContainerRef,
 } from "@react-navigation/native"
 
-import * as storage from "./utils/storage"
+import * as storage from "../utils/storage"
 
 /* eslint-disable */
 export const RootNavigation = {

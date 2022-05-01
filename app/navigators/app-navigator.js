@@ -11,7 +11,6 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack"
 // import { Demo, HomeScreen, } from "../screens"
 import { navigationRef, useBackButtonHandler } from "./navigation-utilities"
 import HomeScreen from "../screens/Home";
-import Demo from "../screens/Demo";
 
 
 /**
@@ -31,13 +30,13 @@ const Stack = createNativeStackNavigator()
 const AppStack = () => {
     return (
         <Stack.Navigator
+
             screenOptions={{
                 headerShown: false,
             }}
             initialRouteName="home"
         >
             <Stack.Screen name="home" component={HomeScreen} />
-            <Stack.Screen name="demo" component={Demo} />
             {/** 🔥 Your screens go here */}
         </Stack.Navigator>
     )

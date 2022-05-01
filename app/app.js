@@ -5,12 +5,14 @@ import { SafeAreaProvider, initialWindowMetrics } from "react-native-safe-area-c
 export const NAVIGATION_PERSISTENCE_KEY = "NAVIGATION_STATE";
 import { AppNavigator, useNavigationPersistence } from "./navigators"
 import { initFonts } from "./theme/fonts";
-import { ErrorBoundary } from "./screens/error/error-boundary"
+import { ErrorBoundary } from "./screens/Error/errorBoundary"
+import { RootStoreProvider, setupRootStore } from "./models"
 const App = ({ }) => {
+    const [rootStore, setRootStore] = useState(undefined)
     useEffect(() => {
         ; (async () => {
-            await initFonts() // expo
-            // setupRootStore().then(setRootStore)
+            await initFonts()
+            setupRootStore().then(setRootStore)
         })()
     }, [])
 
@@ -19,15 +21,18 @@ const App = ({ }) => {
         onNavigationStateChange,
         isRestored: isNavigationStateRestored,
     } = useNavigationPersistence(NAVIGATION_PERSISTENCE_KEY)
+    if (!rootStore || !isNavigationStateRestored) return null
     return (
-        // <ToggleStorybook>
-        <SafeAreaProvider initialMetrics={initialWindowMetrics}>
-            <AppNavigator
-                initialState={initialNavigationState}
-                onStateChange={onNavigationStateChange}
-            />
-        </SafeAreaProvider>
-        // </ToggleStorybook>
+        <RootStoreProvider value={rootStore}>
+            <SafeAreaProvider initialMetrics={initialWindowMetrics}>
+                <ErrorBoundary catchErrors={"always"}>
+                    <AppNavigator
+                        initialState={initialNavigationState}
+                        onStateChange={onNavigationStateChange}
+                    />
+                </ErrorBoundary>
+            </SafeAreaProvider>
+        </RootStoreProvider>
     )
 };
 

@@ -4,8 +4,5 @@
     "cancel": "Hủy bỏ",
     "back": "Quay lại",
     "hello": "Xin Chào"
-  },
-  "errors": {
-    "invalidEmail": "Lỗi Email."
   }
 }

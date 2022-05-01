@@ -1,15 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Text, View } from 'react-native';
-import { useTranslation } from 'react-i18next';
-const HomeScreen = ({
+import { observer } from "mobx-react-lite"
+import SplashScreen from 'react-native-splash-screen'
+
+const HomeScreen = observer(({
 
 }) => {
-    const { t } = useTranslation()
+    useEffect(() => {
+        SplashScreen.hide();
+    }, [])
     return (
-        <View style={{ justifyContent: "center", alignContent: "center", backgroundColor: "red", flex: 1 }}>
-            <Text>{t("common.hello")}</Text>
+        <View style={{ justifyContent: "center", alignContent: "center", alignItems: "center", flex: 1 }}>
+            <Text>Home</Text>
         </View>
     )
-};
+});
 
 export default HomeScreen;
