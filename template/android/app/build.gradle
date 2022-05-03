@@ -1,6 +1,6 @@
 apply plugin: "com.android.application"
 project.ext.envConfigFiles = [
-        dev: ".env.development",
+        dev: ".env",
         production: ".env.production",
         staging: ".env.staging",
 //        anothercustombuild: ".env",
@@ -148,7 +148,7 @@ android {
         versionCode Integer.valueOf(env.get("ANDROID_APP_VERSION_CODE"))
         versionName env.get("ANDROID_APP_VERSION_NAME")
         resValue "string", "build_config_package", "com.ubox"
-
+        setProperty("archivesBaseName", "COMU-$versionName")
         buildConfigField "boolean", "IS_NEW_ARCHITECTURE_ENABLED", isNewArchitectureEnabled().toString()
 
         if (isNewArchitectureEnabled()) {
@@ -274,26 +274,26 @@ android {
     flavorDimensions "default"
     productFlavors {
         dev {
-//            dimension "enviroment"
             manifestPlaceholders = [
-                    appIcon: "@mipmap/ic_launcher"
+                    appIcon: "@mipmap/ic_launcher",
+                    appIconRound: "@mipmap/ic_launcher"
             ]
 //            applicationIdSuffix ".dev"
             resValue "string", "app_name", project.env.get("APP_NAME")
             signingConfig signingConfigs.development
         }
         staging {
-//            dimension "enviroment"
             manifestPlaceholders = [
-                    appIcon: "@mipmap/staging"
+                    appIcon: "@mipmap/staging",
+                    appIconRound: "@mipmap/staging"
             ]
             resValue "string", "app_name", project.env.get("APP_NAME")
             signingConfig signingConfigs.development
         }
         production {
-//            dimension "enviroment"
             manifestPlaceholders = [
-                    appIcon: "@mipmap/production"
+                    appIcon: "@mipmap/production".
+                    appIconRound: "@mipmap/production"
             ]
             resValue "string", "app_name", project.env.get("APP_NAME")
             signingConfig signingConfigs.production
@@ -307,6 +307,9 @@ android {
             // https://developer.android.com/studio/build/configure-apk-splits.html
             // Example: versionCode 1 will generate 1001 for armeabi-v7a, 1002 for x86, etc.
             def versionCodes = ["armeabi-v7a": 1, "x86": 2, "arm64-v8a": 3, "x86_64": 4]
+            def flavor = variant.name
+            def versionName = variant.versionName
+            output.outputFileName = "prefix_${flavor}_${versionName}.apk"
             def abi = output.getFilter(com.android.build.OutputFile.ABI)
             if (abi != null) {  // null for the universal-debug, universal-release variants
                 output.versionCodeOverride =

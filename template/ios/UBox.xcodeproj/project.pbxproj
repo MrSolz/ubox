@@ -48,7 +48,7 @@
 		00E356EE1AD99517003FC87E /* UBoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UBoxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* UBoxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBoxTests.m; sourceTree = "<group>"; };
-		135FEFD823774C0D94829A10 /* FontAwesome5_Pro_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Pro_Brands.ttf; path = ../assets/fonts/FontAwesome5_Pro_Brands.ttf; sourceTree = "<group>"; };
+		135FEFD823774C0D94829A10 /* FontAwesome5_Pro_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Pro_Brands.ttf; path = ../assets/fonts/FontAwesome5_Pro_Brands.ttf; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* UBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = UBox/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = UBox/AppDelegate.mm; sourceTree = "<group>"; };
@@ -79,24 +79,27 @@
 		7448194B281DAF19006B2193 /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 		7448194C281DAF19006B2193 /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 		7448194D281DAF19006B2193 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
+		7448194E28202B0F006B2193 /* UBoxProd-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UBoxProd-Info.plist"; sourceTree = "<group>"; };
+		7448194F28202B1D006B2193 /* UBoxStaging-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UBoxStaging-Info.plist"; sourceTree = "<group>"; };
+		7448195028202B22006B2193 /* UBoxDev-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "UBoxDev-Info.plist"; sourceTree = SOURCE_ROOT; };
+		7448195128202B29006B2193 /* UBoxDev-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "UBoxDev-Info.plist"; sourceTree = SOURCE_ROOT; };
+		7448195228202B37006B2193 /* UBoxDev-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "UBoxDev-Info.plist"; sourceTree = SOURCE_ROOT; };
+		7448195328202B5F006B2193 /* UBoxDev-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UBoxDev-Info.plist"; sourceTree = "<group>"; };
 		7495CEBC280C623000ABEAFA /* UBoxDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UBoxDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7495CEBD280C623000ABEAFA /* UBoxDev-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "UBoxDev-Info.plist"; path = "/Users/solx/Desktop/UBox/ios/UBoxDev-Info.plist"; sourceTree = "<absolute>"; };
 		7495CECF280C623F00ABEAFA /* UBoxStaging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UBoxStaging.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7495CED0280C623F00ABEAFA /* UBoxStaging-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "UBoxStaging-Info.plist"; path = "/Users/solx/Desktop/UBox/ios/UBoxStaging-Info.plist"; sourceTree = "<absolute>"; };
 		7495CEDE280C68D000ABEAFA /* UBoxProd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UBoxProd.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7495CEDF280C68D000ABEAFA /* UBoxProd-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "UBoxProd-Info.plist"; path = "/Users/solx/Desktop/UBox/ios/UBoxProd-Info.plist"; sourceTree = "<absolute>"; };
 		7495CEE0280C6EB700ABEAFA /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = UBox/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8256D0BB98404A03A1DF36DA /* FontAwesome5_Pro_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Pro_Regular.ttf; path = ../assets/fonts/FontAwesome5_Pro_Regular.ttf; sourceTree = "<group>"; };
+		8256D0BB98404A03A1DF36DA /* FontAwesome5_Pro_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Pro_Regular.ttf; path = ../assets/fonts/FontAwesome5_Pro_Regular.ttf; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-UBox-UBoxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UBox-UBoxTests.release.xcconfig"; path = "Target Support Files/Pods-UBox-UBoxTests/Pods-UBox-UBoxTests.release.xcconfig"; sourceTree = "<group>"; };
 		9ED2CE25D3E09C1D063B38F2 /* Pods-UBoxCommonPods-UBoxStaging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UBoxCommonPods-UBoxStaging.release.xcconfig"; path = "Target Support Files/Pods-UBoxCommonPods-UBoxStaging/Pods-UBoxCommonPods-UBoxStaging.release.xcconfig"; sourceTree = "<group>"; };
 		BB6B813EE7DAF97A4A346241 /* libPods-UBoxCommonPods-UBoxTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UBoxCommonPods-UBoxTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C39E2D234D98EBE405657527 /* Pods-UBoxCommonPods-UBoxDev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UBoxCommonPods-UBoxDev.debug.xcconfig"; path = "Target Support Files/Pods-UBoxCommonPods-UBoxDev/Pods-UBoxCommonPods-UBoxDev.debug.xcconfig"; sourceTree = "<group>"; };
-		CDCB7241F9D640E5892DE8D8 /* FontAwesome5_Pro_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Pro_Solid.ttf; path = ../assets/fonts/FontAwesome5_Pro_Solid.ttf; sourceTree = "<group>"; };
+		CDCB7241F9D640E5892DE8D8 /* FontAwesome5_Pro_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Pro_Solid.ttf; path = ../assets/fonts/FontAwesome5_Pro_Solid.ttf; sourceTree = "<group>"; };
 		CFEBF7037E823929E81D2025 /* Pods-UBoxCommonPods-UBox Prod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UBoxCommonPods-UBox Prod.debug.xcconfig"; path = "Target Support Files/Pods-UBoxCommonPods-UBox Prod/Pods-UBoxCommonPods-UBox Prod.debug.xcconfig"; sourceTree = "<group>"; };
 		D6650BA92CE623C765D11B74 /* Pods-UBoxCommonPods-UBox Dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UBoxCommonPods-UBox Dev.release.xcconfig"; path = "Target Support Files/Pods-UBoxCommonPods-UBox Dev/Pods-UBoxCommonPods-UBox Dev.release.xcconfig"; sourceTree = "<group>"; };
 		DDF22E50CAE41C6F5C84F087 /* Pods-UBoxCommonPods-UBox Prod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UBoxCommonPods-UBox Prod.release.xcconfig"; path = "Target Support Files/Pods-UBoxCommonPods-UBox Prod/Pods-UBoxCommonPods-UBox Prod.release.xcconfig"; sourceTree = "<group>"; };
-		E1CAF70F0C774606ADA3D711 /* FontAwesome5_Pro_Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Pro_Light.ttf; path = ../assets/fonts/FontAwesome5_Pro_Light.ttf; sourceTree = "<group>"; };
+		E1CAF70F0C774606ADA3D711 /* FontAwesome5_Pro_Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Pro_Light.ttf; path = ../assets/fonts/FontAwesome5_Pro_Light.ttf; sourceTree = "<group>"; };
 		E386609DDE866EC6AD4F8631 /* Pods-UBoxCommonPods-UBoxDev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UBoxCommonPods-UBoxDev.release.xcconfig"; path = "Target Support Files/Pods-UBoxCommonPods-UBoxDev/Pods-UBoxCommonPods-UBoxDev.release.xcconfig"; sourceTree = "<group>"; };
 		E5B71B8850F197B74A1B5CE7 /* libPods-UBoxCommonPods-UBoxDev.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UBoxCommonPods-UBoxDev.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -200,7 +203,6 @@
 				CDCB7241F9D640E5892DE8D8 /* FontAwesome5_Pro_Solid.ttf */,
 			);
 			name = Resources;
-			path = "";
 			sourceTree = "<group>";
 		};
 		7448193D281DAEE0006B2193 /* Fonts */ = {
@@ -243,9 +245,9 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
-				7495CEBD280C623000ABEAFA /* UBoxDev-Info.plist */,
-				7495CED0280C623F00ABEAFA /* UBoxStaging-Info.plist */,
-				7495CEDF280C68D000ABEAFA /* UBoxProd-Info.plist */,
+				7448194E28202B0F006B2193 /* UBoxProd-Info.plist */,
+				7448194F28202B1D006B2193 /* UBoxStaging-Info.plist */,
+				7448195328202B5F006B2193 /* UBoxDev-Info.plist */,
 				6A7D47434EA14E238B9DE1FA /* Resources */,
 			);
 			indentWidth = 2;
@@ -268,6 +270,9 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				7448195028202B22006B2193 /* UBoxDev-Info.plist */,
+				7448195128202B29006B2193 /* UBoxDev-Info.plist */,
+				7448195228202B37006B2193 /* UBoxDev-Info.plist */,
 				5B7EB9410499542E8C5724F5 /* Pods-UBox-UBoxTests.debug.xcconfig */,
 				89C6BE57DB24E9ADA2F236DE /* Pods-UBox-UBoxTests.release.xcconfig */,
 				5743E73869A8CFE9986E94E9 /* Pods-UBoxCommonPods-UBox Dev.debug.xcconfig */,
