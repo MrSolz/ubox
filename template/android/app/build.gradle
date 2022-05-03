@@ -292,7 +292,7 @@ android {
         }
         production {
             manifestPlaceholders = [
-                    appIcon: "@mipmap/production".
+                    appIcon: "@mipmap/production",
                     appIconRound: "@mipmap/production"
             ]
             resValue "string", "app_name", project.env.get("APP_NAME")
